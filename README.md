@@ -7,3 +7,9 @@ and download Limbo apk from fdroid
 
 ```
 also read .gitignore
+```
+
+
+
+# WARNING 
+THIS ISO IS ACTUALLY ZIP, SO EXTRACT IT, RELEAVING A REAL ISO FILE THAT LEADS U TO ANDROID 4.2.2
