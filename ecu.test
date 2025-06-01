@@ -1,0 +1,38 @@
+# ECU Test File – Android 4.2.2 ISO Boot Test
+# Purpose: Boot Android 4.2.2 ISO in emulator and verify system starts successfully
+
+[Emulator]
+Name=Limbo PC Emulator
+Architecture=x86
+RAM=512MB
+Cores=1
+VGA=std
+Sound=none
+ISO=android-4.2.2.iso
+HardDisk=none
+CDROM=android-4.2.2.iso
+BootDevice=CDROM
+Acceleration=off
+
+[Android ISO]
+Version=4.2.2
+Codename=Jelly Bean
+BuildType=Live CD
+Persistence=off
+
+[Expected Behavior]
+BootScreen=GRUB or ISO menu appears
+KernelLoads=Yes
+UIShows=Android Setup or Home Screen
+TouchSupport=Partial (via mouse)
+Performance=Slow on low-end devices
+
+[Notes]
+; Do not mount or burn android422.iso directly.
+; Extract first — it's actually a ZIP archive with an ISO inside.
+; Rename `android422.iso` to `android422.zip`, extract, and use `android-4.2.2.iso`.
+
+[TestStatus]
+TestedOn=Limbo 6.0.1
+Result=Boot Successful
+Date=2025-06-01
